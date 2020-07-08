@@ -1,0 +1,34 @@
+/* Navigation in general */
+
+.main-navigation {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #44444480;
+    padding: 10px;
+    border-radius: 0 0 20px 20px;
+    z-index: 1;
+}
+
+
+/* Whole inner navigation */
+
+.main-navigation__inner {
+    margin: auto;
+    max-width: 1300px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+/* Main navigation logo icon */
+
+.main-navigation__logo--image {
+    width: 40px;
+    margin-right: 20px;
+    border-radius: 50%;
+    background-color: #ccc;
+    padding: 5px;
+}

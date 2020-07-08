@@ -81,7 +81,7 @@
 
 /* Media ipad and less */
 
-@media(max-width: 839px) {
+@media(max-width: 767px) {
     /* Main navigation */
     .main-navigation__menu {
         position: fixed;
@@ -99,7 +99,7 @@
     }
 }
 
-@media(max-width: 839px) {
+@media(max-width: 767px) {
     .main-navigation__menu--open {
         opacity: 1;
         pointer-events: unset;
@@ -107,7 +107,7 @@
     }
 }
 
-@media(max-width: 839px) {
+@media(max-width: 767px) {
     .main-navigation__menu-item {
         margin-left: 0;
         padding: 5px 0;
@@ -130,14 +130,14 @@
     }
     .main-navigation__inner__mobile-button--image {
         display: block;
-        width: 25px;
+        width: 100px;
     }
 }
 
 
 /* Media ipad and more */
 
-@media(min-width: 840px) {
+@media(min-width: 768px) {
     /* logo of navigation styles */
     .main-navigation__logo-image {
         width: 40px;

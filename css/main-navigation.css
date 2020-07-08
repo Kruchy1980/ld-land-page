@@ -5,9 +5,8 @@
     position: fixed;
     top: 0;
     left: 0;
-    background-color: #44444480;
+    background-color: #444;
     padding: 10px;
-    border-radius: 0 0 20px 20px;
     z-index: 1;
 }
 
@@ -22,6 +21,12 @@
     justify-content: space-between;
 }
 
+@media(min-width: 425px) {
+    .main-navigation__inner {
+        padding: 0 10px;
+    }
+}
+
 
 /* Main navigation logo icon */
 
@@ -31,4 +36,134 @@
     border-radius: 50%;
     background-color: #ccc;
     padding: 5px;
+}
+
+
+/* main-navigation__menu  */
+
+.main-navigation__menu {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    transition: 0.5s;
+    transition-property: opacity;
+    z-index: 1;
+}
+
+
+/* Main navigation menu item */
+
+.main-navigation__menu-item {
+    margin-left: 20px;
+    padding: 5px;
+}
+
+
+/* Main navigation menu-item: hover */
+
+.main-navigation__menu-item:hover {
+    background-color: #777;
+    border-radius: 10px
+}
+
+
+/* Main navigation menu item link */
+
+.main-navigation__menu-item__link {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 16px;
+    text-decoration: none;
+    color: #fff;
+}
+
+
+/* Media ipad and less */
+
+@media(max-width: 839px) {
+    /* Main navigation */
+    .main-navigation__menu {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: #000;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        text-align: center;
+        opacity: 0;
+        pointer-events: none;
+    }
+}
+
+@media(max-width: 839px) {
+    .main-navigation__menu--open {
+        opacity: 1;
+        pointer-events: unset;
+        transform: unset;
+    }
+}
+
+@media(max-width: 839px) {
+    .main-navigation__menu-item {
+        margin-left: 0;
+        padding: 5px 0;
+    }
+    .main-navigation__menu-item__link {
+        font-size: 20px;
+    }
+    /* .main-navigation__menu-item__link-icon {
+        width: 20px;
+    } */
+    .main-navigation__menu-item:hover {
+        border-bottom: none;
+    }
+    /* Hamburger menu */
+    .main-navigation__inner__mobile-button {
+        display: unset;
+        border: none;
+        padding: 0;
+        background: none;
+    }
+    .main-navigation__inner__mobile-button--image {
+        display: block;
+        width: 25px;
+    }
+}
+
+
+/* Media ipad and more */
+
+@media(min-width: 840px) {
+    /* logo of navigation styles */
+    .main-navigation__logo-image {
+        width: 40px;
+        margin-right: 20px;
+    }
+    /* Links styling */
+    /* Main navigation logo link */
+    .main-navigation__logo-link {
+        font-size: 20px;
+    }
+    /* Main navigation menu item */
+    .main-navigation__menu-item {
+        margin-left: 20px;
+        margin-top: 10px;
+        padding-bottom: 5px;
+    }
+    /* Main navigation menu item link */
+    .main-navigation__menu-item__link {
+        font-size: 0.9rem;
+    }
+    /* Main navigation menu-item: hover */
+    .main-navigation__menu-item__:hover {
+        border-bottom: 2px solid #fff;
+    }
+    /* Hambutgetr menu */
+    .main-navigation__inner__mobile-button {
+        display: none;
+    }
 }

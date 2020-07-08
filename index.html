@@ -8,6 +8,34 @@
     <link rel="icon" href="./images/bookmark-img/photoshop.svg">
     <link rel="stylesheet" href="./css/main.css">
     <link rel="stylesheet" href="./css/main-navigation.css">
+    <link rel="stylesheet" href="./css/dropdown-item.css">
+
+    <style>
+        /* Dropdown-item in menu-item */
+        
+        .main-navigation__menu-item__dropdown__content {
+            display: none;
+            background-color: #444;
+            margin-top: 5px;
+            /* display: flex;
+            flex-direction: column; */
+        }
+        
+        .main-navigation__menu-item__dropdown__content a {
+            color: greenyellow;
+        }
+        /* displaying class */
+        
+        .show {
+            position: absolute;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .active {
+            border-bottom: 2px solid #ccc;
+        }
+    </style>
 </head>
 
 <body>
@@ -29,16 +57,16 @@
                     <a href="#about" class="main-navigation__menu-item__link">About</a>
                 </li>
                 <li class="main-navigation__menu-item">
-                    <a href="#about" class="main-navigation__menu-item__link">Functionalities</a>
+                    <a href="#functionalities" class="main-navigation__menu-item__link">Functionalities</a>
                 </li>
-                <li class="main-navigation__menu-item__dropdown">
-                    <p href="#gallery" class="main-navigation__menu-item__dropdown-button">Gallery</p>
+                <li class="main-navigation__menu-item">
+                    <a href="#gallery" id="js-dropdown-button" class="main-navigation__menu-item__link">Gallery</a>
                     <div id="dropper" class="main-navigation__menu-item__dropdown__content">
-                        <a href="#">Newborn</a>
-                        <a href="#">Toddler</a>
-                        <a href="#">Children</a>
-                        <a href="#">Family</a>
-                        <a href="#">Maternity</a>
+                        <a href="#newborn" class="main-navigation__menu-item__link">Newborn</a>
+                        <a href="#toddler" class="main-navigation__menu-item__link">Toddler</a>
+                        <a href="#children" class="main-navigation__menu-item__link">Children</a>
+                        <a href="#family" class="main-navigation__menu-item__link">Family</a>
+                        <a href="#maternity" class="main-navigation__menu-item__link">Maternity</a>
                     </div>
                 </li>
                 <li class="main-navigation__menu-item">
@@ -48,6 +76,9 @@
                     <a href="#inqueries" class="main-navigation__menu-item__link">Inqueries</a>
                 </li>
             </ul>
+            <button class="main-navigation__inner__mobile-button  js-main-navigation__inner__mobile-button">
+                <img class="main-navigation__inner__mobile-button--image" src="" alt="Hamburger Menu">
+            </button>
         </div>
     </nav>
 
@@ -57,6 +88,10 @@
     <!-- 6. Gallery -.-> couple bookmarks  -->
     <!-- 7. Investment -->
     <!-- 8. Inqueries -->
+    <!-- 9. Footer -->
+
+    <script src="./scripts/dropdown-menu.js"></script>
+    <script src="./scripts/hamburger-menu.js"></script>
 
     <script>
     </script>

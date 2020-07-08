@@ -43,8 +43,6 @@
 
 .main-navigation__menu {
     display: flex;
-    margin: 0;
-    padding: 0;
     list-style: none;
     transition: 0.5s;
     transition-property: opacity;
@@ -151,7 +149,7 @@
     /* Main navigation menu item */
     .main-navigation__menu-item {
         margin-left: 20px;
-        margin-top: 10px;
+        /* margin-top: 10px; */
         padding-bottom: 5px;
     }
     /* Main navigation menu item link */
@@ -166,4 +164,11 @@
     .main-navigation__inner__mobile-button {
         display: none;
     }
+}
+
+
+/* For all of the active stuff */
+
+.active {
+    border-bottom: 2px solid #ccc;
 }

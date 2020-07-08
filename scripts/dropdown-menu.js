@@ -1,5 +1,5 @@
 // The dropdown button logic
-const dropdownContent = document.querySelector('#dropper');
+// const dropdownContent = document.querySelector('#dropper');
 const dropdownButton = document.querySelector('#js-dropdown-button');
 // The function for dropping down the menu
 const dropMenu = () => {

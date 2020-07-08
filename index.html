@@ -11,30 +11,7 @@
     <link rel="stylesheet" href="./css/dropdown-item.css">
 
     <style>
-        /* Dropdown-item in menu-item */
-        
-        .main-navigation__menu-item__dropdown__content {
-            display: none;
-            background-color: #444;
-            margin-top: 5px;
-            /* display: flex;
-            flex-direction: column; */
-        }
-        
-        .main-navigation__menu-item__dropdown__content a {
-            color: greenyellow;
-        }
-        /* displaying class */
-        
-        .show {
-            position: absolute;
-            display: flex;
-            flex-direction: column;
-        }
-        
-        .active {
-            border-bottom: 2px solid #ccc;
-        }
+
     </style>
 </head>
 
@@ -51,15 +28,18 @@
             <!-- 2. Main-navigation list -->
             <ul class="main-navigation__menu js-main-navigation__menu">
                 <li class="main-navigation__menu-item">
-                    <a href="#top" class="main-navigation__menu-item__link">Home</a>
+                    <a href="#home" class="main-navigation__menu-item__link home">Home</a>
                 </li>
                 <li class="main-navigation__menu-item">
-                    <a href="#about" class="main-navigation__menu-item__link">About</a>
+                    <a href="#about" class="main-navigation__menu-item__link about">About</a>
                 </li>
                 <li class="main-navigation__menu-item">
-                    <a href="#functionalities" class="main-navigation__menu-item__link">Functionalities</a>
+                    <a href="#functionalities" class="main-navigation__menu-item__link functionalities">Functionalities</a>
                 </li>
                 <li class="main-navigation__menu-item">
+                    <a href="#gallery" class="main-navigation__menu-item__link gallery">Gallery</a>
+                </li>
+                <!-- <li class="main-navigation__menu-item">
                     <a href="#gallery" id="js-dropdown-button" class="main-navigation__menu-item__link">Gallery</a>
                     <div id="dropper" class="main-navigation__menu-item__dropdown__content">
                         <a href="#newborn" class="main-navigation__menu-item__link">Newborn</a>
@@ -68,12 +48,12 @@
                         <a href="#family" class="main-navigation__menu-item__link">Family</a>
                         <a href="#maternity" class="main-navigation__menu-item__link">Maternity</a>
                     </div>
+                </li> -->
+                <li class="main-navigation__menu-item">
+                    <a href="#investment" class="main-navigation__menu-item__link investment">Investment</a>
                 </li>
                 <li class="main-navigation__menu-item">
-                    <a href="#investment" class="main-navigation__menu-item__link">Investment</a>
-                </li>
-                <li class="main-navigation__menu-item">
-                    <a href="#inqueries" class="main-navigation__menu-item__link">Inqueries</a>
+                    <a href="#inqueries" class="main-navigation__menu-item__link contact">Contact</a>
                 </li>
             </ul>
             <button class="main-navigation__inner__mobile-button  js-main-navigation__inner__mobile-button">
@@ -87,10 +67,11 @@
     <!-- 5. Functionalities -->
     <!-- 6. Gallery -.-> couple bookmarks  -->
     <!-- 7. Investment -->
-    <!-- 8. Inqueries -->
+    <!-- 8. Contact -->
     <!-- 9. Footer -->
 
-    <script src="./scripts/dropdown-menu.js"></script>
+    <!-- <script src="./scripts/dropdown-menu.js"></script> -->
+    <script src="./scripts/make-active-items.js"></script>
     <script src="./scripts/hamburger-menu.js"></script>
 
     <script>

@@ -13,7 +13,7 @@ section.about {
 .about__inner {
     display: flex;
     flex-direction: column;
-    height: 60vh;
+    height: 80vh;
     justify-content: space-evenly;
 }
 

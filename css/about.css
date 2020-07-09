@@ -1,0 +1,89 @@
+/* About Section */
+
+section.about {
+    margin-top: 60px;
+}
+
+
+/* Inner About */
+
+
+/* Main */
+
+.about__inner {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: center;
+}
+
+@media(min-width: 768px) {
+    .about__inner {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+}
+
+
+/* Title */
+
+
+/* before */
+
+
+/* .about__inner--title::before {
+    display: flex;
+    align-items: center;
+    content: '<div></div>';
+    border: 1px solid black;
+    width: 200px;
+} */
+
+
+/* Main */
+
+.about__inner--title {
+    display: flex;
+    justify-content: center;
+}
+
+.about__inner--title h1 {
+    color: #fff;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    z-index: 3;
+}
+
+.about__inner--title img {
+    z-index: -1;
+}
+
+
+/* After */
+
+
+/* .about__inner--title::after {
+    display: flex;
+    align-items: center;
+    content: '-----------------';
+} */
+
+
+/* Text */
+
+.about-inner--text {
+    padding: 20px 5px;
+    width: 100%;
+    /* margin: 10px auto; */
+}
+
+
+/* Image - box */
+
+.about__inner__box {
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

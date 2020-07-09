@@ -16,7 +16,7 @@ const slideList = [{
     {
         img: '../images/slider-images/slider-image-3.jpeg',
         title: 'Functionalities',
-        shortDescription: 'That part is just for you knowledge what I can do in the Future Application',
+        shortDescription: 'That part is just for your knowledge what I can do in the Future Application',
         source: '#functionalities',
     },
     {

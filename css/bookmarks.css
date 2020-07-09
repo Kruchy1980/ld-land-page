@@ -76,9 +76,9 @@
     font-weight: normal;
 }
 
-@media(min-width: 840px) {
+@media(min-width: 768px) {
     /* Header size */
     .bookmark__header {
-        font-size: 80px;
+        font-size: 50px;
     }
 }

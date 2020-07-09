@@ -13,66 +13,24 @@ section.about {
 .about__inner {
     display: flex;
     flex-direction: column;
-    height: 100vh;
-    justify-content: center;
+    height: 60vh;
+    justify-content: space-evenly;
 }
 
 @media(min-width: 768px) {
     .about__inner {
         flex-direction: row;
         justify-content: space-around;
+        align-items: center;
     }
 }
-
-
-/* Title */
-
-
-/* before */
-
-
-/* .about__inner--title::before {
-    display: flex;
-    align-items: center;
-    content: '<div></div>';
-    border: 1px solid black;
-    width: 200px;
-} */
-
-
-/* Main */
-
-.about__inner--title {
-    display: flex;
-    justify-content: center;
-}
-
-.about__inner--title h1 {
-    color: #fff;
-    position: relative;
-    top: 50%;
-    left: 50%;
-    z-index: 3;
-}
-
-.about__inner--title img {
-    z-index: -1;
-}
-
-
-/* After */
-
-
-/* .about__inner--title::after {
-    display: flex;
-    align-items: center;
-    content: '-----------------';
-} */
 
 
 /* Text */
 
 .about-inner--text {
+    display: flex;
+    justify-content: baseline;
     padding: 20px 5px;
     width: 100%;
     /* margin: 10px auto; */

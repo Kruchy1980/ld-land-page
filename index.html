@@ -1,4 +1,6 @@
-.large-container { max-width: 1500px; }
+<!DOCTYPE html>
+<html lang="en">
+
 
 <head>
     <meta charset="UTF-8">
@@ -12,38 +14,40 @@
     <link rel="stylesheet" href="./css/bookmarks.css">
     <link rel="stylesheet" href="./css/about.css">
     <link rel="stylesheet" href="./css/containers.css">
+    <link rel="stylesheet" href="./css/functions.css">
+    <link rel="stylesheet" href="./css/gallery.css">
 
     <style>
 
     </style>
-</head>
+    </>
 
-<body>
-    <!-- 1. Main-navigation -->
-    <nav class="main-navigation">
-        <div class="main-navigation__inner">
-            <div class="main-navigation__logo">
-                <a href="#" class="main-navigatioion__logo--link">
-                    <img src="./images/logo/logo.svg" alt="Camera" class="main-navigation__logo--image
+    <body>
+        <!-- 1. Main-navigation -->
+        <nav class="main-navigation">
+            <div class="main-navigation__inner">
+                <div class="main-navigation__logo">
+                    <a href="#" class="main-navigatioion__logo--link">
+                        <img src="./images/logo/logo.svg" alt="Camera" class="main-navigation__logo--image
                     ">
-                </a>
-            </div>
-            <!-- 2. Main-navigation list -->
-            <ul class="main-navigation__menu js-main-navigation__menu">
-                <li class="main-navigation__menu-item">
-                    <a href="#home" class="main-navigation__menu-item__link home">Home</a>
-                </li>
-                <li class="main-navigation__menu-item">
-                    <a href="#about" class="main-navigation__menu-item__link about">About</a>
-                </li>
-                <li class="main-navigation__menu-item">
-                    <a href="#functions" class="main-navigation__menu-item__link functionalities">Functions</a>
-                </li>
-                <li class="main-navigation__menu-item">
-                    <a href="#gallery" class="main-navigation__menu-item__link gallery">Gallery</a>
-                </li>
-                <!-- IF WILL BE NEEDED  -> Uncomment -->
-                <!-- <li class="main-navigation__menu-item">
+                    </a>
+                </div>
+                <!-- 2. Main-navigation list -->
+                <ul class="main-navigation__menu js-main-navigation__menu">
+                    <li class="main-navigation__menu-item">
+                        <a href="#home" class="main-navigation__menu-item__link home">Home</a>
+                    </li>
+                    <li class="main-navigation__menu-item">
+                        <a href="#about" class="main-navigation__menu-item__link about">About</a>
+                    </li>
+                    <li class="main-navigation__menu-item">
+                        <a href="#functions" class="main-navigation__menu-item__link functionalities">Functions</a>
+                    </li>
+                    <li class="main-navigation__menu-item">
+                        <a href="#gallery" class="main-navigation__menu-item__link gallery">Gallery</a>
+                    </li>
+                    <!-- IF WILL BE NEEDED  -> Uncomment -->
+                    <!-- <li class="main-navigation__menu-item">
                     <a href="#gallery" id="js-dropdown-button" class="main-navigation__menu-item__link">Gallery</a>
                     <div id="dropper" class="main-navigation__menu-item__dropdown__content">
                         <a href="#newborn" class="main-navigation__menu-item__link">Newborn</a>
@@ -53,100 +57,177 @@
                         <a href="#maternity" class="main-navigation__menu-item__link">Maternity</a>
                     </div>
                 </li> -->
-                <li class="main-navigation__menu-item">
-                    <a href="#investment" class="main-navigation__menu-item__link investment">Investment</a>
-                </li>
-                <li class="main-navigation__menu-item">
-                    <a href="#inqueries" class="main-navigation__menu-item__link contact">Contact</a>
-                </li>
-            </ul>
-            <button class="main-navigation__inner__mobile-button  js-main-navigation__inner__mobile-button">
+                    <li class="main-navigation__menu-item">
+                        <a href="#investment" class="main-navigation__menu-item__link investment">Investment</a>
+                    </li>
+                    <li class="main-navigation__menu-item">
+                        <a href="#inqueries" class="main-navigation__menu-item__link contact">Contact</a>
+                    </li>
+                </ul>
+                <button class="main-navigation__inner__mobile-button  js-main-navigation__inner__mobile-button">
                 <img class="main-navigation__inner__mobile-button--image" src="./images/hamburger-menu/ham-menu.svg" alt="Hamburger Menu">
             </button>
-        </div>
-    </nav>
-
-    <!-- 3. Home -->
-    <section id="home">
-        <div class="slider-container">
-            <img src="./images/slider-images/slider-image-1.jpeg" alt="" class="slider" />
-            <a href="#home" class="slide-title">Home</a>
-            <p class="slide-description">
-                Any Description you want to
-            </p>
-            <div class="indicators-dots">
-                <span id="1" class="active"></span>
-                <span id="2"></span>
-                <span id="3"></span>
-                <span id="4"></span>
-                <span id="5"></span>
-                <span id="6"></span>
             </div>
-        </div>
-    </section>
-    <!-- 4. About -->
-    <div class="bookmark bookmark--about" id="about">
-        <h2 class="bookmark__header">About</h2>
-    </div>
-    <div class="container">
-        <section class="about">
-            <div class="about__inner">
+        </nav>
 
-                <div class="about__inner--text">
-                    <p>
-                        Here i will set some description about You which i would like you to send me as well, who You Are, Some Experience in that branch You want do work, anything that can advertise You as a Photographer.
-                    </p>
-                </div>
-                <div class="about__inner__box">
-                    <img src="./images/desc-photo/your-photo.png" alt="Your Photo" class="about__inner__box--image">
-                </div>
-
-            </div>
-        </section>
-    </div>
-    <!-- 5. Functions -->
-    <div class="bookmark bookmark--functions" id="functions">
-        <h2 class="bookmark__header">Functions</h2>
-    </div>
-    <div class="container--large">
-        <section class="functions">
-            <div class="functions__inner">
-                <div class="functions__inner__card">
-                    <div class="functions__inner__card--icon">
-                        <img src="./images/functions-icons/admin.svg" alt="Login Admin">
-                    </div>
-                    <div class="functions__inner__card__text-box">
-                        <h3 class="functions__inner__card__text-box--title"></h3>
-                        <p class="functions__inner__card__text-box--description"></p>
-                    </div>
+        <!-- 3. Home -->
+        <section id="home">
+            <div class="slider-container">
+                <img src="./images/slider-images/slider-image-1.jpeg" alt="" class="slider" />
+                <a href="#home" class="slide-title">Home</a>
+                <p class="slide-description">
+                    Any Description you want to
+                </p>
+                <div class="indicators-dots">
+                    <span id="1" class="active"></span>
+                    <span id="2"></span>
+                    <span id="3"></span>
+                    <span id="4"></span>
+                    <span id="5"></span>
+                    <span id="6"></span>
                 </div>
             </div>
         </section>
-    </div>
-    <!-- 6. Gallery -.-> couple bookmarks  -->
-    <div class="bookmark bookmark--gallery" id="about">
-        <h2 class="bookmark__header">Gallery</h2>
-    </div>
-    <!-- 7. Investment -->
-    <div class="bookmark bookmark--investment" id="about">
-        <h2 class="bookmark__header">Investment</h2>
-    </div>
-    <!-- 8. Contact -->
-    <div class="bookmark bookmark--Contact" id="about">
-        <h2 class="bookmark__header">Contact</h2>
-    </div>
-    <!-- 9. Footer -->
-    <footer class="bottom">
-        <p>©2020 Lexie D.Photography by Jakub Kruszyński </p>
-    </footer>
+        <!-- 4. About -->
+        <div class="bookmark bookmark--about" id="about">
+            <h2 class="bookmark__header">About</h2>
+        </div>
+        <div class="container">
+            <section class="about">
+                <div class="about__inner">
 
-    <!-- <script src="./scripts/dropdown-menu.js"></script> -->
-    <script src="./scripts/make-active-items.js"></script>
-    <script src="./scripts/hamburger-menu.js"></script>
-    <script src="./scripts/slider.js"></script>
+                    <div class="about__inner--text">
+                        <p>
+                            Here i will set some description about You which i would like you to send me as well, who You Are, Some Experience in that branch You want do work, anything that can advertise You as a Photographer.
+                        </p>
+                    </div>
+                    <div class="about__inner__box">
+                        <img src="./images/desc-photo/your-photo.png" alt="Your Photo" class="about__inner__box--image">
+                    </div>
 
-    <script>
-    </script>
-</body>
+                </div>
+            </section>
+        </div>
+        <!-- 5. Functions -->
+        <div class="bookmark bookmark--functions" id="functions">
+            <h2 class="bookmark__header">Functions</h2>
+        </div>
+        <div class="container--large">
+            <section class="functions">
+                <div class="functions--description">
+                    <h2>In that part i just want to list the main functionalities in future application it won't be displayed if you decide to do it.</h2>
+                </div>
+                <div class="functions__inner">
+                    <!-- <div class="functions__inner--description">
+                        <h2>In that part i just want to list the main functionalities in future application if you decide to do it.</h2>
+                    </div> -->
+                    <!-- 1.Admin -->
+                    <div class="functions__inner__card">
+                        <div class="functions__inner__card--icon">
+                            <img class="functions__inner__card--icon--image" src="./images/functions-icons/admin.svg" alt="Login Admin">
+                        </div>
+                        <div class="functions__inner__card__text-box">
+                            <h3 class="functions__inner__card__text-box--title">Admin</h3>
+                            <p class="functions__inner__card__text-box--description">The functionality let's you and only you to log into the application as admin to manipulate with the gallery content.</p>
+                        </div>
+                    </div>
+                    <!-- 2. Add -->
+                    <div class="functions__inner__card">
+                        <div class="functions__inner__card--icon">
+                            <img class="functions__inner__card--icon--image" src="./images/functions-icons/add.svg" alt="Add Picture">
+                        </div>
+                        <div class="functions__inner__card__text-box">
+                            <h3 class="functions__inner__card__text-box--title">Add</h3>
+                            <p class="functions__inner__card__text-box--description">The functionality let's you as admin to add the pictures to specified category from the admin level.</p>
+                        </div>
+                    </div>
+                    <!-- 3. Edit/Update -->
+                    <div class="functions__inner__card">
+                        <div class="functions__inner__card--icon">
+                            <img class="functions__inner__card--icon--image" src="./images/functions-icons/edit.svg" alt="Login Admin">
+                        </div>
+                        <div class="functions__inner__card__text-box">
+                            <h3 class="functions__inner__card__text-box--title">Edit/Update</h3>
+                            <p class="functions__inner__card__text-box--description">The functionality let's you as admin to replace, the existed photo in picture category with the corrected/modified one.</p>
+                        </div>
+                    </div>
+                    <!-- 3. Remove/Delete -->
+                    <div class="functions__inner__card">
+                        <div class="functions__inner__card--icon">
+                            <img class="functions__inner__card--icon--image" src="./images/functions-icons/delete.svg" alt="Login Admin">
+                        </div>
+                        <div class="functions__inner__card__text-box">
+                            <h3 class="functions__inner__card__text-box--title">Remove/Delete</h3>
+                            <p class="functions__inner__card__text-box--description">The functionality let's you as admin to remove specified photo from specified category whenever you would like to.</p>
+                        </div>
+                    </div>
+                    <!-- 4. Gallery -->
+                    <div class="functions__inner__card">
+                        <div class="functions__inner__card--icon">
+                            <img class="functions__inner__card--icon--image" src="./images/functions-icons/gallery.svg" alt="Login Admin">
+                        </div>
+                        <div class="functions__inner__card__text-box">
+                            <h3 class="functions__inner__card__text-box--title">Gallery</h3>
+                            <p class="functions__inner__card__text-box--description">The whole gallery propably will generate the costs which will reflect the fee for the database used - with the application you will have to pay the cost yourself - this is all negotiable.</p>
+                        </div>
+                    </div>
+                    <!-- 5. Contact -->
+                    <div class="functions__inner__card">
+                        <div class="functions__inner__card--icon">
+                            <img class="functions__inner__card--icon--image" src="./images/functions-icons/contact.svg" alt="Login Admin">
+                        </div>
+                        <div class="functions__inner__card__text-box">
+                            <h3 class="functions__inner__card__text-box--title">Contact</h3>
+                            <p class="functions__inner__card__text-box--description">The functionality depends of the privacy rights of USA so You need to ask how it looks in you country - i do not know.</p>
+                        </div>
+                    </div>
+                    <!-- 6. Search -->
+                    <div class="functions__inner__card">
+                        <div class="functions__inner__card--icon">
+                            <img class="functions__inner__card--icon--image" src="./images/functions-icons/search.svg" alt="Login Admin">
+                        </div>
+                        <div class="functions__inner__card__text-box">
+                            <h3 class="functions__inner__card__text-box--title">Search</h3>
+                            <p class="functions__inner__card__text-box--description">The functionality let's all the clients to search for specified photo - the database is needed to make the functionality work properly - this involves costs.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <!-- 6. Gallery -.-> couple bookmarks  -->
+        <div class="bookmark bookmark--gallery" id="about">
+            <h2 class="bookmark__header">Gallery</h2>
+        </div>
+        <div class="container">
+            <section class="gallery">
+                <div class="gallery--description">
+                    <h2>In that part i just want show the examples of displaying the pictures from your database - I have two ideas from that showed below.</h2>
+                </div>
+                <div class="gallery__inner">
+
+                </div>
+            </section>
+        </div>
+        <!-- 7. Investment -->
+        <div class="bookmark bookmark--investment" id="about">
+            <h2 class="bookmark__header">Investment</h2>
+        </div>
+        <!-- 8. Contact -->
+        <div class="bookmark bookmark--contact" id="about">
+            <h2 class="bookmark__header">Contact</h2>
+        </div>
+        <!-- 9. Footer -->
+        <footer class="bottom">
+            <p>©2020 Lexie D.Photography by Jakub Kruszyński </p>
+        </footer>
+
+        <!-- <script src="./scripts/dropdown-menu.js"></script> -->
+        <script src="./scripts/make-active-items.js"></script>
+        <script src="./scripts/hamburger-menu.js"></script>
+        <script src="./scripts/slider.js"></script>
+
+        <script>
+        </script>
+    </body>
 
 </html>

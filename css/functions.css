@@ -1,0 +1,106 @@
+/* Inner of our functions */
+
+.functions__inner {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    min-height: 80vh;
+    justify-content: baseline;
+    align-items: center;
+}
+
+@media(min-width: 768px) {
+    .functions__inner {
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+}
+
+
+/* Inner description */
+
+.functions--description {
+    background-color: #110ff050;
+    max-width: 280px;
+    margin: 30px auto;
+    border: 1px solid #bbb;
+    border-radius: 15px;
+    box-shadow: 0 0 5px 3px #ccc;
+    padding: 5px;
+    color: #024402;
+}
+
+
+/* Main Card */
+
+.functions__inner__card {
+    display: flex;
+    justify-content: space-between;
+    height: 150px;
+    width: 350px;
+    min-width: 280px;
+    border: 1px solid #bbb;
+    box-shadow: 0 0 5px 3px #ccc;
+    border-radius: 10px;
+    margin: 15px;
+}
+
+
+/* Inner card icon */
+
+.functions__inner__card--icon {
+    display: flex;
+    justify-content: baseline;
+    flex-direction: column;
+    align-items: baseline;
+    width: 30%;
+}
+
+
+/* Icon image */
+
+.functions__inner__card--icon--image {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    padding: 10px;
+    border: 1px solid #bbb;
+    box-shadow: 0 0 5px 3px #ccc;
+    transition: all 1s;
+    margin: 10px;
+}
+
+@media(min-width: 768px) {
+    .functions__inner__card--icon--image {
+        width: 60px;
+        height: 60px;
+    }
+}
+
+
+/* Inner card text box */
+
+.functions__inner__card__text-box {
+    display: flex;
+    margin-left: 10px;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: baseline;
+}
+
+
+/* Inner card text title */
+
+.functions__inner__card__text-box--title {
+    margin-top: 10px;
+    text-decoration: underline;
+    text-transform: uppercase;
+}
+
+
+/* Card functionality description */
+
+.functions__inner__card__text-box--description {
+    padding: 10px;
+}

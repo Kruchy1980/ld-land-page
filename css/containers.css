@@ -3,7 +3,7 @@
 .container--large {
     width: 1300px;
     margin: auto;
-    height: 100vh;
+    min-height: 100vh;
     /* For smaller devices */
     max-width: 100%;
     padding: 10px;

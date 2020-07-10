@@ -1,13 +1,30 @@
 /* Slider small box */
 
 .slider__box--small {
-    max-width: 400px;
-    min-width: 280px;
+    /* max-width: 400px; */
+    width: 280px;
     height: 300px;
-    min-height: 180px;
+    /* min-height: 180px; */
     margin: 10px auto;
     border-radius: 20px;
     border: 10px groove #091875;
+    transition: all 2s;
+}
+
+@media(min-width: 425px) {
+    .slider__box--small {
+        /* max-width: 400px; */
+        /* width: 350px; */
+        width: 70vw;
+        max-width: 420px;
+    }
+}
+
+@media(min-width: 768px) {
+    .slider__box--small {
+        /* max-width: 400px; */
+        width: 420px;
+    }
 }
 
 

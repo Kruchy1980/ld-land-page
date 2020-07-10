@@ -15,15 +15,15 @@ const slideList = [{
     },
     {
         img: '../images/slider-images/slider-image-3.jpeg',
-        title: 'Functionalities',
+        title: 'Functions',
         shortDescription: 'That part is just for your knowledge what I can do in the Future Application',
-        source: '#functionalities',
+        source: '#functions',
     },
     {
         img: '../images/slider-images/slider-image-4.jpeg',
         title: 'Gallery',
         shortDescription: 'Any Description you want in here if any',
-        // source: "#gallery",
+        source: "#gallery",
     },
     {
         img: '../images/slider-images/slider-image-5.jpeg',

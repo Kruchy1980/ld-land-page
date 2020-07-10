@@ -13,6 +13,15 @@
 }
 
 
+/* Gallery inner in general */
+
+.gallery__inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
 /* Inner title */
 
 .gallery__inner--title {
@@ -44,12 +53,15 @@
 .gallery__box {
     display: flex;
     flex-direction: column;
+    /* align-items: center; */
 }
 
 @media(min-width: 768px) {
     .gallery__box {
         flex-direction: row;
         flex-wrap: wrap;
+        justify-content: center;
+        align-items: none;
         flex: 1;
     }
 }
@@ -58,9 +70,10 @@
 /* Item/Card */
 
 .gallery__box--icon {
-    margin: 10px auto;
+    margin: 10px;
     /* max-width: 400px; */
     max-width: 270px;
+    max-height: 180px;
     border: 6px solid #eee;
     box-shadow: 0 0 5px 8px #ddd;
     border-radius: 10px;

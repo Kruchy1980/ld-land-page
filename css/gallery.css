@@ -1,0 +1,42 @@
+/* Inner description */
+
+.gallery--description {
+    background-color: #110ff050;
+    max-width: 400px;
+    min-width: 280px;
+    margin: 30px auto;
+    border: 1px solid #bbb;
+    border-radius: 15px;
+    box-shadow: 0 0 5px 3px #ccc;
+    padding: 5px;
+    color: #024402;
+}
+
+
+/* Inner title */
+
+.gallery__inner--title {
+    margin: 20px auto;
+    min-width: 280px;
+    display: flex;
+    justify-content: center;
+}
+
+
+/* Main text */
+
+.gallery__inner--title--text {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+
+/* Subtext */
+
+.gallery__inner--title--subtext {
+    font-size: 16px;
+    font-weight: 400;
+}
+
+
+/* Card box list */

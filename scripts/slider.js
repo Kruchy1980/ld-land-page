@@ -133,7 +133,6 @@ function switchSlide(e) {
         changeIndicator();
         slideInterval = setInterval(slideChange, slideTime);
     }
-
 }
 
 // Now implementation

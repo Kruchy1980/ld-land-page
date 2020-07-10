@@ -7,6 +7,8 @@
     min-height: 80vh;
     justify-content: baseline;
     align-items: center;
+    transition: all 1s;
+    -webkit-transition: all 1s;
 }
 
 @media(min-width: 768px) {
@@ -22,7 +24,8 @@
 
 .functions--description {
     background-color: #110ff050;
-    max-width: 280px;
+    max-width: 400px;
+    min-width: 280px;
     margin: 30px auto;
     border: 1px solid #bbb;
     border-radius: 15px;
@@ -44,6 +47,7 @@
     box-shadow: 0 0 5px 3px #ccc;
     border-radius: 10px;
     margin: 15px;
+    transition: all 1s;
 }
 
 
@@ -67,7 +71,6 @@
     padding: 10px;
     border: 1px solid #bbb;
     box-shadow: 0 0 5px 3px #ccc;
-    transition: all 1s;
     margin: 10px;
 }
 

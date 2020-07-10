@@ -57,12 +57,12 @@ const changeSlidesOnArrowsS = (e) => {
         } else if (activeSlideS < 0) {
             activeSlideS = slideListS.length - 1;
         }
-        // what to do on it - repeate of main function
+        // what to do on it - repeat of main function
         singleImageS.src = slideListS[activeSlideS].source;
         changeIndicatorS();
         slideIntervalS = setInterval(slideChangeS, slideTimeS);
     }
-    // 1a.Function which chqanges classes on the indicarors
+    // 1a.Function which changes classes on the indicators
 const changeIndicatorS = () => {
         // just for check
         // console.log('zmiana');

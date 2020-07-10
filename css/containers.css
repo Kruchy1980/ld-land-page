@@ -12,7 +12,7 @@
 .container {
     width: 1100px;
     margin: auto;
-    height: 100vh;
+    min-height: 100vh;
     /* For smaller devices */
     max-width: 100%;
     padding: 10px;
@@ -21,7 +21,7 @@
 .container--small {
     width: 768px;
     margin: auto;
-    height: 100vh;
+    /* min-height: 100vh; */
     /* For smaller devices */
     max-width: 100%;
     padding: 10px;

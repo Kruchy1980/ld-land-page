@@ -1,7 +1,7 @@
 /* Slider small box */
 
 .slider__box--small {
-    width: 400px;
+    max-width: 400px;
     min-width: 280px;
     height: 300px;
     min-height: 180px;

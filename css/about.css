@@ -15,6 +15,7 @@ section.about {
     flex-direction: column;
     height: 80vh;
     justify-content: space-evenly;
+    align-items: center;
 }
 
 @media(min-width: 768px) {

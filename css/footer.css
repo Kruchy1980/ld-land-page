@@ -3,3 +3,20 @@
     padding: 15px;
     border-top: 1px solis #ccc;
 }
+
+
+/* Social icons box */
+
+.bottom-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* Footer icons */
+
+.bottom-icon__link__image {
+    width: 20px;
+    margin: 5px;
+}

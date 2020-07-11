@@ -18,6 +18,8 @@
     <link rel="stylesheet" href="./css/functions.css">
     <link rel="stylesheet" href="./css/gallery.css">
     <link rel="stylesheet" href="./css/footer.css">
+    <link rel="stylesheet" href="./css/investment.css">
+    <link rel="stylesheet" href="./css/contact.css">
 
 
     <style>
@@ -64,7 +66,7 @@
                         <a href="#investment" class="main-navigation__menu-item__link investment">Investment</a>
                     </li>
                     <li class="main-navigation__menu-item">
-                        <a href="#inqueries" class="main-navigation__menu-item__link contact">Contact</a>
+                        <a href="#contact" class="main-navigation__menu-item__link contact">Contact</a>
                     </li>
                 </ul>
                 <button class="main-navigation__inner__mobile-button  js-main-navigation__inner__mobile-button">
@@ -259,13 +261,45 @@
         <div class="bookmark bookmark--investment " id="investment">
             <h2 class="bookmark__header ">Investment</h2>
         </div>
+
         <!-- 8. Contact -->
-        <div class="bookmark bookmark--contact " id="about ">
+        <div class="bookmark bookmark--contact " id="contact">
             <h2 class="bookmark__header ">Contact</h2>
         </div>
+        <form action="#" class="contact-form">
+            <div class="container--small">
+                <div class="contact-form__info">
+                    <div class="contact-form__info-item">
+                        <img src="./images/contact-icons/envelope.svg" alt="E-mail" class="contact-form__info-icon">
+                        <a href="#" class="contact-form__info-link">Your e-mail</a>
+                    </div>
+                    <div class="contact-form__info-item">
+                        <img src="./images/contact-icons/phone.svg" alt="Mobile" class="contact-form__info-icon">
+                        <a href="#" class="contact-form__info-link">Your Phone</a>
+                    </div>
+                </div>
+                <p class="contact-form__description"><span class="contact-form__description--main"> You can add some description of your firm/studio or whatever you want to.</span> But before I could do it you need to ask how it looks at commercial pages in US because in Poland I can not
+                    set such a form on commercial page (so you need to ask a details how it is in your Country) because of privacy rules
+                </p>
+                <div class="contact-form__fields">
+                    <input type="text" name="name" class="contact-form__field" placeholder="Enter Your Full Name - for the client" required>
+                    <input type="email" name="e-mail" class="contact-form__field" placeholder="Enter Your E-mail - for the client" required>
+                    <textarea class="contact-form__field-message" name="message" rows="15" placeholder="Enter Your Message - for the client" required></textarea>
+                </div>
+                <button class="contact-form__submit__button">Send</button>
+            </div>
+        </form>
         <!-- 9. Footer -->
         <footer class="bottom">
             <p>©2020 Lexie D.Photography by Jakub Kruszyński </p>
+            <div class="bottom-icon">
+                <a href="https://www.instagram.com/lexiedphoto/" class="bottom-icon__link">
+                    <img src="./images/social-icons/instagram-icon.svg" alt="Instagram" class="bottom-icon__link__image">
+                </a>
+                <a href="https://www.facebook.com/lexiedphoto/" class="bottom-icon__link">
+                    <img src="./images/social-icons/facebook-icon.svg" alt="Facebook" class="bottom-icon__link__image">
+                </a>
+            </div>
         </footer>
 
         <!-- <script src="./scripts/dropdown-menu.js "></script> -->

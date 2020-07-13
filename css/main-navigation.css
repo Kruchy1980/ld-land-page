@@ -169,6 +169,14 @@
 
 /* For all of the active stuff */
 
-.active {
+
+/* .active {
+    border-bottom: 2px solid #ccc;
+} */
+
+
+/* dynamic active links of navigation */
+
+.active-links {
     border-bottom: 2px solid #ccc;
 }

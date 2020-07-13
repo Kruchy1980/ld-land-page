@@ -94,10 +94,10 @@
             </div>
         </section>
         <!-- 4. About -->
-        <div class="bookmark bookmark--about" id="about">
+        <div class="bookmark bookmark--about">
             <h2 class="bookmark__header">About</h2>
         </div>
-        <div class="container">
+        <div class="container" id="about">
             <section class="about">
                 <div class="about__inner">
 
@@ -114,10 +114,10 @@
             </section>
         </div>
         <!-- 5. Functions -->
-        <div class="bookmark bookmark--functions" id="functions">
+        <div class="bookmark bookmark--functions">
             <h2 class="bookmark__header">Functions</h2>
         </div>
-        <div class="container--large">
+        <div class="container--large" id="functions">
             <section class="functions">
                 <div class="functions--description">
                     <h2>In that part i just want to list the main functionalities in future application it won't be displayed if you decide to do it.</h2>
@@ -200,10 +200,10 @@
             </section>
         </div>
         <!-- 6. Gallery -.-> couple bookmarks  -->
-        <div class="bookmark bookmark--gallery" id="gallery">
+        <div class="bookmark bookmark--gallery">
             <h2 class="bookmark__header">Gallery</h2>
         </div>
-        <div class="container">
+        <div class="container" id="gallery">
             <section class="gallery">
                 <div class="gallery--description">
                     <h2>In that part i just want show the examples of displaying the pictures from your database - I have two ideas from that showed below - here are nod divided for categories because are done only demonstratively.</h2>
@@ -258,10 +258,10 @@
             </section>
         </div>
         <!-- 7. Investment -->
-        <div class="bookmark bookmark--investment " id="investment">
+        <div class="bookmark bookmark--investment ">
             <h2 class="bookmark__header ">Investment</h2>
         </div>
-        <section class="container">
+        <section class="container" id="investment">
             <div class="main-investment">
                 <!-- Right side -->
                 <div class="main-investment__left">
@@ -366,32 +366,34 @@
         </section>
 
         <!-- 8. Contact -->
-        <div class="bookmark bookmark--contact " id="contact">
+        <div class="bookmark bookmark--contact" id="contact">
             <h2 class="bookmark__header ">Contact</h2>
         </div>
-        <form action="#" class="contact-form">
-            <div class="container--small">
-                <div class="contact-form__info">
-                    <div class="contact-form__info-item">
-                        <img src="./images/contact-icons/envelope.svg" alt="E-mail" class="contact-form__info-icon">
-                        <a href="#" class="contact-form__info-link">Your e-mail</a>
+        <section class="container">
+            <form action="#" class="contact-form">
+                <div class="container--small">
+                    <div class="contact-form__info">
+                        <div class="contact-form__info-item">
+                            <img src="./images/contact-icons/envelope.svg" alt="E-mail" class="contact-form__info-icon">
+                            <a href="#" class="contact-form__info-link">Your e-mail</a>
+                        </div>
+                        <div class="contact-form__info-item">
+                            <img src="./images/contact-icons/phone.svg" alt="Mobile" class="contact-form__info-icon">
+                            <a href="#" class="contact-form__info-link">Your Phone</a>
+                        </div>
                     </div>
-                    <div class="contact-form__info-item">
-                        <img src="./images/contact-icons/phone.svg" alt="Mobile" class="contact-form__info-icon">
-                        <a href="#" class="contact-form__info-link">Your Phone</a>
+                    <p class="contact-form__description"><span class="contact-form__description--main"> You can add some description of your firm/studio or whatever you want to.</span> But before I could do it you need to ask how it looks at commercial pages in US because in Poland I can
+                        not set such a form on commercial page (so you need to ask a details how it is in your Country) because of privacy rules
+                    </p>
+                    <div class="contact-form__fields">
+                        <input type="text" name="name" class="contact-form__field" placeholder="Enter Your Full Name - for the client" required>
+                        <input type="email" name="e-mail" class="contact-form__field" placeholder="Enter Your E-mail - for the client" required>
+                        <textarea class="contact-form__field-message" name="message" rows="15" placeholder="Enter Your Message - for the client" required></textarea>
                     </div>
+                    <button class="contact-form__submit__button">Send</button>
                 </div>
-                <p class="contact-form__description"><span class="contact-form__description--main"> You can add some description of your firm/studio or whatever you want to.</span> But before I could do it you need to ask how it looks at commercial pages in US because in Poland I can not
-                    set such a form on commercial page (so you need to ask a details how it is in your Country) because of privacy rules
-                </p>
-                <div class="contact-form__fields">
-                    <input type="text" name="name" class="contact-form__field" placeholder="Enter Your Full Name - for the client" required>
-                    <input type="email" name="e-mail" class="contact-form__field" placeholder="Enter Your E-mail - for the client" required>
-                    <textarea class="contact-form__field-message" name="message" rows="15" placeholder="Enter Your Message - for the client" required></textarea>
-                </div>
-                <button class="contact-form__submit__button">Send</button>
-            </div>
-        </form>
+            </form>
+        </section>
         <!-- 9. Footer -->
         <footer class="bottom">
             <p>©2020 Lexie D.Photography by Jakub Kruszyński </p>
@@ -406,11 +408,12 @@
         </footer>
 
         <!-- <script src="./scripts/dropdown-menu.js "></script> -->
-        <script src="./scripts/make-active-items.js "></script>
+        <!-- <script src="./scripts/make-active-items.js "></script> -->
         <script src="./scripts/hamburger-menu.js "></script>
         <script src="./scripts/slider.js "></script>
         <script src="./scripts/slider-small.js "></script>
         <!-- <script src="./scripts/gallery-list.js "></script> -->
+        <script src="./scripts/dynamic-nav.js "></script>
 
         <script>
         </script>

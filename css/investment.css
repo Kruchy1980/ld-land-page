@@ -22,22 +22,6 @@
 
 /* Left side */
 
-.main-investment__right {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-@media(min-width: 768px) {
-    .main-investment__right {
-        width: 60%;
-    }
-}
-
-
-/* Left Side */
-
 .main-investment__left {
     width: 100%;
     display: flex;
@@ -47,7 +31,7 @@
 
 @media(min-width: 768px) {
     .main-investment__left {
-        width: 40%;
+        width: 60%;
     }
 }
 
@@ -55,11 +39,11 @@
 /* Information about pricing */
 
 
-/* Right side Title */
+/* left side Title */
 
-.main-investment__right__title,
-.main-investment__right__price__subbox--one,
-.main-investment__right__price__subbox--two {
+.main-investment__left__title,
+.main-investment__left__price__subbox--one,
+.main-investment__left__price__subbox--two {
     margin: 20px;
     display: flex;
     justify-content: space-around;
@@ -69,7 +53,7 @@
 
 /* Title text left */
 
-.main-investment__right__title--text-left {
+.main-investment__left__title--text-left {
     text-decoration: underline;
     font-size: 1.2em;
     font-weight: bold;
@@ -77,9 +61,9 @@
 }
 
 
-/* Title text right */
+/* Title text left */
 
-.main-investment__right__title--text-right {
+.main-investment__left__title--text-right {
     color: #4d3701;
     font-weight: bold;
 }
@@ -87,9 +71,9 @@
 
 /* First info */
 
-.main-investment__right--info,
-.main-investment__right__packages__info-box--text,
-.main-investment__right__packages__description {
+.main-investment__left--info,
+.main-investment__left__packages__info-box--text,
+.main-investment__left__packages__description {
     margin: 20px;
     text-align: center;
 }
@@ -97,19 +81,19 @@
 
 /* First info link */
 
-.main-investment__right--info-link {
+.main-investment__left--info-link {
     text-decoration: none;
     color: #4d3701;
 }
 
-.main-investment__right--info-link:hover {
+.main-investment__left--info-link:hover {
     font-weight: bold;
 }
 
 
 /* box for packages part */
 
-.main-investment__right__packages__card__box {
+.main-investment__left__packages__card__box {
     display: flex;
     flex-direction: column;
     justify-content: baseline;
@@ -121,7 +105,7 @@
 }
 
 @media(min-width: 768px) {
-    .main-investment__right__packages__card__box {
+    .main-investment__left__packages__card__box {
         flex-direction: row;
         flex-wrap: wrap;
     }
@@ -130,7 +114,7 @@
 
 /* Card Boxes */
 
-.main-investment__right__packages__card__box--title {
+.main-investment__left__packages__card__box--title {
     width: 100%;
     margin: 10px;
     display: flex;
@@ -141,7 +125,7 @@
 
 /* Card description */
 
-.main-investment__right__packages__card__box--description {
+.main-investment__left__packages__card__box--description {
     padding: 20px;
 }
 
@@ -165,4 +149,78 @@
     text-indent: 25px;
     color: #4d3701;
     margin-bottom: 20px;
+}
+
+
+/* RIGHT SIDE */
+
+.main-investment__right {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: space-evenly; */
+}
+
+@media(min-width: 768px) {
+    .main-investment__right {
+        width: 40%;
+    }
+}
+
+
+/* The main description of right side */
+
+.main-investment__right__box--description {
+    margin: 20px;
+    text-align: center;
+    font-size: 1.2em;
+}
+
+
+/* The right side info */
+
+
+/* Box */
+
+.main-investment__right__box--info {
+    margin: 30px auto;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    /* align-items: center; */
+    max-width: 250px;
+    border-radius: 20px;
+    box-shadow: 0 0 5px 3px #ddd;
+}
+
+
+/* Info text */
+
+.main-investment__right__box--info--text {
+    margin: 10px 0;
+    font-size: 0.9em;
+    padding: 5px;
+}
+
+
+/* Image box */
+
+.main-investment__right__box--picture {
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: center;
+    /* border-radius: 20px; */
+}
+
+
+/* Image */
+
+.main-investment__right__box--image {
+    padding: 10px;
+    width: 300px;
+    height: 400px;
+    border: 10px solid #ddd;
+    border-radius: 20px;
+    box-shadow: 0 0 5px 3px #ddd;
 }

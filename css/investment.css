@@ -52,4 +52,117 @@
 }
 
 
-/*  */
+/* Information about pricing */
+
+
+/* Right side Title */
+
+.main-investment__right__title,
+.main-investment__right__price__subbox--one,
+.main-investment__right__price__subbox--two {
+    margin: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+}
+
+
+/* Title text left */
+
+.main-investment__right__title--text-left {
+    text-decoration: underline;
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #4d3701;
+}
+
+
+/* Title text right */
+
+.main-investment__right__title--text-right {
+    color: #4d3701;
+    font-weight: bold;
+}
+
+
+/* First info */
+
+.main-investment__right--info,
+.main-investment__right__packages__info-box--text,
+.main-investment__right__packages__description {
+    margin: 20px;
+    text-align: center;
+}
+
+
+/* First info link */
+
+.main-investment__right--info-link {
+    text-decoration: none;
+    color: #4d3701;
+}
+
+.main-investment__right--info-link:hover {
+    font-weight: bold;
+}
+
+
+/* box for packages part */
+
+.main-investment__right__packages__card__box {
+    display: flex;
+    flex-direction: column;
+    justify-content: baseline;
+    align-items: center;
+    box-shadow: 0 0 5px 3px #ddd;
+    border-radius: 20px;
+    max-width: 300px;
+    margin: 30px auto;
+}
+
+@media(min-width: 768px) {
+    .main-investment__right__packages__card__box {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+}
+
+
+/* Card Boxes */
+
+.main-investment__right__packages__card__box--title {
+    width: 100%;
+    margin: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+/* Card description */
+
+.main-investment__right__packages__card__box--description {
+    padding: 20px;
+}
+
+
+/* The investment info */
+
+.investment__additional-information--title {
+    font-size: 1.5em;
+    font-weight: bold;
+    text-indent: 50px;
+    color: #4d3701;
+    margin: 15px;
+}
+
+
+/* Subinfo of investment */
+
+.investment__additional-information--subinfo {
+    font-size: 1.3em;
+    /* font-weight: 600; */
+    text-indent: 25px;
+    color: #4d3701;
+    margin-bottom: 20px;
+}

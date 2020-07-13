@@ -2,37 +2,37 @@
 // Flirt variables as usually
 // Our images will be in an array so first variable of slides array with objects where each of the objects will have the path to the image and both texts inside
 const slideList = [{
-        img: '../images/slider-images/slider-image-1.jpeg',
+        img: './images/slider-images/slider-image-1.jpeg',
         title: 'Home',
         shortDescription: 'Any Description you want in here if any',
         source: '#home',
     },
     {
-        img: '../images/slider-images/slider-image-2.jpeg',
+        img: './images/slider-images/slider-image-2.jpeg',
         title: 'About',
         shortDescription: 'Any Description you want in here if any',
         source: '#about',
     },
     {
-        img: '../images/slider-images/slider-image-3.jpeg',
+        img: './images/slider-images/slider-image-3.jpeg',
         title: 'Functions',
         shortDescription: 'That part is just for your knowledge what I can do in the Future Application',
         source: '#functions',
     },
     {
-        img: '../images/slider-images/slider-image-4.jpeg',
+        img: './images/slider-images/slider-image-4.jpeg',
         title: 'Gallery',
         shortDescription: 'Any Description you want in here if any',
         source: "#gallery",
     },
     {
-        img: '../images/slider-images/slider-image-5.jpeg',
+        img: './images/slider-images/slider-image-5.jpeg',
         title: 'Investment',
         shortDescription: 'Any Description you want in here if any',
         source: '#investment',
     },
     {
-        img: '../images/slider-images/slider-image-6.jpeg',
+        img: './images/slider-images/slider-image-6.jpeg',
         title: 'Contact',
         shortDescription: 'To Create the Contact in your application you need to get information about the privacy rules in USA',
         source: '#contact',

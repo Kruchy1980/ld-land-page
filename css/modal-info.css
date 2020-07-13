@@ -1,0 +1,67 @@
+/* Main modal */
+
+.main-modal {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: #44444480;
+}
+
+
+/* Closing button */
+
+.modal__close__button {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    width: 25px;
+    height: 25px;
+    text-align: center;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 3px 5px;
+    cursor: pointer;
+    background-color: #ff0000;
+    color: #fff;
+}
+
+
+/* Modal box */
+
+.main-modal__box {
+    /* width: auto; */
+    background-color: #ccc;
+    border-radius: 30px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 0 5px 3px #fff;
+    padding: 15px;
+}
+
+
+/* Modal content box */
+
+.main-modal__box__content {
+    width: 95%;
+    margin: 20px auto;
+}
+
+
+/* moodal Paragraphs */
+
+.main-modal__box__content--text {
+    margin-bottom: 10px
+}
+
+
+/* Class modal display */
+
+.modal-display {
+    display: none;
+}

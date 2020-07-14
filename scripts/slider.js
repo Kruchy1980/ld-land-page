@@ -39,11 +39,11 @@ const slideList = [{
     },
 ];
 
-// Now we can set time needed to slide automatic chaange
+// Now we can set time needed to slide automatic change
 let slideTime = 5000;
 // Object index
 let activeSlide = 0; // we already have information about the image in our html
-// Time for changeble items to declare as variables
+// Time for changeable items to declare as variables
 // image
 const singleImage = document.querySelector('img.slider');
 // Title
@@ -52,7 +52,7 @@ const projectTitle = document.querySelector('a.slide-title ');
 const projectDescriptionShort = document.querySelector('.slide-description ');
 // link to project
 // const projectLink = document.querySelector('slide-link');
-// Indicators variable - collecting to array /nodeList of singular elements/indicators and we need to exchange it for casual array because the check method we want to use is not availible for nodeList so we need to use the square brqackets and spread operator to do that
+// Indicators variable - collecting to array /nodeList of singular elements/indicators and we need to exchange it for casual array because the check method we want to use is not available for nodeList so we need to use the square brackets and spread operator to do that
 const indicators = [...document.querySelectorAll('.indicators-dots span')];
 //---------------------------
 
@@ -60,7 +60,7 @@ const indicators = [...document.querySelectorAll('.indicators-dots span')];
 //1b. Change Slides on arrow press
 const changeSlidesOnArrows = (e) => {
         // disable interval to not working during the key press
-        // clearInterval(slideInterval); // it will be exxecuted after keypress
+        // clearInterval(slideInterval); // it will be executed after keypress
         // //Set the slide on keypress
         // slideTime = 10000;
         // for check
@@ -91,8 +91,8 @@ const changeIndicator = () => {
         // just for check
         // console.log('zmiana');
         // first we can check which indicator has the active class with method findIndex and callbacks boolean value
-        //So if the indicator contains/has specified class returns true and we can use the variavle for that, 
-        // It will alvays then returns the element only with class active
+        //So if the indicator contains/has specified class returns true and we can use the variable for that, 
+        // It will always then returns the element only with class active
         const activeIndicator = indicators.findIndex(el => el.classList.contains('active'));
         // So if we have that element we can now toggle the class active for ''
         indicators[activeIndicator].classList.remove('active');
@@ -101,7 +101,7 @@ const changeIndicator = () => {
     }
     // 1. Function which will change the slides
 const slideChange = () => {
-    // now we need to define statement when the slider should begin from the begining, but because we firstly incrementing index we need to start from the index -1 because we firstly incrementing it to '0'.
+    // now we need to define statement when the slider should begin from the beginning, but because we firstly incrementing index we need to start from the index -1 because we firstly incrementing it to '0'.
     if (activeSlide >= slideList.length - 1) activeSlide = -1;
     //just because we have already the first element with index 0 displayed than we can start the function from incrementing index
     activeSlide++;
@@ -115,7 +115,7 @@ const slideChange = () => {
     // Short description
     projectDescriptionShort.innerHTML = slideList[activeSlide].shortDescription;
 
-    // here we can implement the funcion which change the indicator
+    // here we can implement the function which change the indicator
     changeIndicator();
 }
 
@@ -137,13 +137,13 @@ function switchSlide(e) {
 
 // Now implementation
 
-// Set intervas can be implemented here
+// Set intervals can be implemented here
 let slideInterval = setInterval(slideChange, slideTime);
 
 
-//1b. If we click onthe element we will call the EventListenet on keypress
+//1b. If we click on the element we will call the EventListener on keypress
 window.addEventListener('keydown', changeSlidesOnArrows);
-//atach function to span
+//attach function to span
 let s = document.querySelector('.indicators-dots').childNodes; //.getElementsByTagName('SPAN');
 if (s) {
     s.forEach(element => {
